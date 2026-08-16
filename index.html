@@ -3,61 +3,672 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Star Carpet & Cleaning Services Timaru | Cleaning & Carpet Cleaning</title>
-    <meta name="description" content="All Star Carpet and Cleaning Services Timaru provides carpet cleaning, house cleaning, deep cleaning, window cleaning, upholstery cleaning, commercial cleaning and property-care services in Timaru and nearby areas.">
+    <title>All Star Carpet & Cleaning Services Timaru | Professional Cleaning</title>
+    <meta name="description" content="Professional carpet, house, commercial, window and property cleaning services in Timaru and nearby areas. Contact All Star Carpet & Cleaning Services Timaru.">
     
-    <!-- Fonts -->
+    <!-- Premium Fonts: Montserrat for Headings, Inter for Body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- LocalBusiness Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HouseCleaningService",
+      "name": "All Star Carpet and Cleaning Services Timaru",
+      "telephone": "+64 27 690 4340",
+      "url": "https://www.allstarcarpetandcleaningservicestimaru.co.nz/",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "131"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Timaru and nearby areas"
+      },
+      "openingHours": "Mo-Su 00:00-23:59"
+    }
+    </script>
 </head>
 <body>
-    <div class="announcement-bar">
-        <div class="announcement-content">Professional Cleaning Services &bull; Carpet Cleaning &bull; Residential & Commercial &bull; Timaru & Nearby Areas</div>
-    </div>
-    
-    <header class="main-header" id="header">
-        <div class="container header-container">
-            <div class="logo"><a href="#">ALL STAR<br><span>CARPET & CLEANING</span></a></div>
-            <nav class="desktop-nav">
-                <ul>
+
+    <!-- Sticky Header -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                ALL STAR<br><span>CARPET & CLEANING</span>
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#gallery">Our Work</a></li>
+                    <li><a href="#work">Our Work</a></li>
                     <li><a href="#reviews">Reviews</a></li>
                     <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="header-actions">
-                <a href="tel:+64276904340" class="phone-link">+64 27 690 4340</a>
+            
+            <div class="header-cta">
+                <a href="tel:+64276904340" class="phone-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    CALL NOW
+                </a>
                 <a href="#quote" class="btn btn-primary">GET A FREE QUOTE</a>
             </div>
+
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-background"></div>
-        <div class="container hero-container">
-            <div class="hero-content">
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Our Work</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
+            <div class="hero-overlay"></div>
+            
+            <div class="container hero-content animate-fade-up">
                 <span class="eyebrow">TRUSTED CLEANING SERVICES IN TIMARU</span>
-                <h1>A Cleaner Home.<br>A Fresher Space.</h1>
-                <p>From carpet and upholstery cleaning to deep cleans, windows, kitchens, bathrooms and complete property cleaning, All Star Carpet and Cleaning Services Timaru provides professional cleaning services for homes and businesses across Timaru and nearby areas.</p>
+                <h1 class="hero-title">A Cleaner Home.<br>A Fresher Space.</h1>
+                <p class="hero-text">From professional carpet cleaning and deep house cleans to windows, upholstery, commercial cleaning and property care, All Star Carpet and Cleaning Services Timaru helps keep homes, workplaces and properties looking their best.</p>
+                
                 <div class="hero-buttons">
+                    <a href="#quote" class="btn btn-primary btn-large">GET A FREE QUOTE</a>
+                    <a href="tel:+64276904340" class="btn btn-secondary btn-large">CALL NOW</a>
+                </div>
+
+                <div class="hero-reviews">
+                    <div class="stars">★★★★★</div>
+                    <p><strong>5.0</strong> &bull; 131 Google Reviews</p>
+                </div>
+            </div>
+
+            <!-- Floating Trust Panel -->
+            <div class="trust-panel-wrapper animate-slide-up">
+                <div class="container">
+                    <div class="trust-panel glass">
+                        <div class="tp-item">
+                            <span class="tp-value">5.0★</span>
+                            <span class="tp-label">Google Rating</span>
+                        </div>
+                        <div class="tp-item">
+                            <span class="tp-value">131+</span>
+                            <span class="tp-label">Google Reviews</span>
+                        </div>
+                        <div class="tp-item">
+                            <span class="tp-value">24/7</span>
+                            <span class="tp-label">Availability</span>
+                        </div>
+                        <div class="tp-item">
+                            <span class="tp-value">TIMARU</span>
+                            <span class="tp-label">Local Service</span>
+                        </div>
+                        <div class="tp-item editable-item">
+                            <span class="tp-value editable" contenteditable="true">10+</span>
+                            <span class="tp-label">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Strip -->
+        <div class="trust-strip">
+            <div class="container trust-strip-inner">
+                <div class="ts-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> 5.0 Google Rating</div>
+                <div class="ts-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> 131 Google Reviews</div>
+                <div class="ts-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Residential & Commercial</div>
+                <div class="ts-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Timaru & Nearby Areas</div>
+                <div class="ts-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Open 24 Hours</div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="about-section py-100">
+            <div class="container about-grid">
+                <div class="about-images reveal-left">
+                    <div class="img-collage">
+                        <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Professional Cleaner" class="img-main">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Detail Shot" class="img-sub">
+                    </div>
+                </div>
+                <div class="about-content reveal-right">
+                    <span class="eyebrow dark">ABOUT ALL STAR</span>
+                    <h2>Professional Cleaning With a Commitment to Quality</h2>
+                    <p>All Star Carpet and Cleaning Services Timaru provides a comprehensive range of cleaning and property-care services for residential and commercial customers across Timaru and nearby areas.</p>
+                    <p>From detailed carpet and upholstery cleaning to deep cleaning, windows, bathrooms, kitchens, pressure washing and end-of-tenancy cleaning, the business provides practical cleaning solutions designed around the needs of each property.</p>
+                    
+                    <div class="about-stats">
+                        <div class="a-stat">
+                            <span class="a-stat-num editable" contenteditable="true">10+</span>
+                            <span class="a-stat-text">Years Experience</span>
+                        </div>
+                        <div class="a-stat">
+                            <span class="a-stat-num">131</span>
+                            <span class="a-stat-text">Google Reviews</span>
+                        </div>
+                        <div class="a-stat">
+                            <span class="a-stat-num">5.0</span>
+                            <span class="a-stat-text">Customer Rating</span>
+                        </div>
+                    </div>
+                    <a href="#services" class="btn btn-primary mt-30">LEARN MORE ABOUT US</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Authority Section -->
+        <section class="authority-section">
+            <div class="container text-center reveal-up">
+                <h2 class="text-white">Experience You Can See in the Details.</h2>
+                <p class="text-light-grey subtitle-max">Professional cleaning services backed by attention to detail, reliable service and a comprehensive range of property-care solutions.</p>
+                
+                <div class="auth-stats-grid">
+                    <div class="auth-stat">
+                        <div class="auth-num editable" contenteditable="true">10+</div>
+                        <div class="auth-label">YEARS EXPERIENCE</div>
+                    </div>
+                    <div class="auth-stat">
+                        <div class="auth-num">5.0</div>
+                        <div class="auth-label">GOOGLE RATING</div>
+                    </div>
+                    <div class="auth-stat">
+                        <div class="auth-num">131</div>
+                        <div class="auth-label">REVIEWS</div>
+                    </div>
+                    <div class="auth-stat">
+                        <div class="auth-num">24/7</div>
+                        <div class="auth-label">AVAILABILITY</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section Architecture -->
+        <section id="services" class="services-arch py-100 bg-light">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <h2>Cleaning Services Designed Around Your Property</h2>
+                    <p class="subtitle">From everyday cleaning to specialist carpet care and complete property cleaning.</p>
+                </div>
+
+                <!-- Featured Service 1: Carpet -->
+                <div class="featured-service-block reveal-up">
+                    <div class="fs-image">
+                        <img src="https://images.unsplash.com/photo-1527515862127-a4fc05baf7a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Carpet Cleaning">
+                    </div>
+                    <div class="fs-content">
+                        <h3>Carpet Cleaning</h3>
+                        <ul class="clean-list">
+                            <li>Carpet Steam Cleaning</li>
+                            <li>Deep Carpet Cleaning</li>
+                            <li>General Carpet Cleaning</li>
+                            <li>Area Rug Cleaning</li>
+                            <li>Pet Stain & Odour Removal</li>
+                        </ul>
+                        <a href="#quote" class="btn btn-primary">BOOK CARPET CLEANING</a>
+                    </div>
+                </div>
+
+                <!-- Featured Service 2: Residential -->
+                <div class="featured-service-block reverse reveal-up">
+                    <div class="fs-content">
+                        <h3>Residential Cleaning</h3>
+                        <ul class="clean-list">
+                            <li>House Cleaning & Deep Cleaning</li>
+                            <li>Standard & Spring Cleaning</li>
+                            <li>Kitchen & Bathroom Cleaning</li>
+                            <li>Oven Cleaning</li>
+                            <li>General Housekeeping</li>
+                        </ul>
+                        <a href="#quote" class="btn btn-primary">HOME CLEANING</a>
+                    </div>
+                    <div class="fs-image">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Residential Cleaning">
+                    </div>
+                </div>
+
+                <!-- Grid for remaining services -->
+                <div class="services-masonry mt-50 reveal-up">
+                    <div class="service-card editable-card">
+                        <h4>Commercial Cleaning</h4>
+                        <ul>
+                            <li>Office Cleaning</li>
+                            <li>Workplace Cleaning</li>
+                            <li>Commercial Sites</li>
+                            <li>Commercial & Residential</li>
+                        </ul>
+                        <a href="#quote" class="text-link">COMMERCIAL CLEANING &rarr;</a>
+                    </div>
+                    
+                    <div class="service-card editable-card">
+                        <h4>Window & Glass Cleaning</h4>
+                        <ul>
+                            <li>Interior Window Cleaning</li>
+                            <li>Exterior Window Cleaning</li>
+                            <li>Window Washing</li>
+                            <li>Glass & Mirror Cleaning</li>
+                        </ul>
+                        <a href="#quote" class="text-link">BOOK WINDOW CLEANING &rarr;</a>
+                    </div>
+                    
+                    <div class="service-card editable-card">
+                        <h4>Upholstery & Mattress</h4>
+                        <ul>
+                            <li>Upholstery Cleaning</li>
+                            <li>Mattress Cleaning</li>
+                            <li>Fabric Cleaning</li>
+                        </ul>
+                        <a href="#quote" class="text-link">BOOK UPHOLSTERY &rarr;</a>
+                    </div>
+
+                    <div class="service-card editable-card">
+                        <h4>Property & Exterior</h4>
+                        <ul>
+                            <li>Pressure & Power Washing</li>
+                            <li>House Washing</li>
+                            <li>Builder's Cleaning</li>
+                            <li>End of Tenancy / Move Out</li>
+                        </ul>
+                        <a href="#quote" class="text-link">EXTERIOR CLEANING &rarr;</a>
+                    </div>
+
+                    <div class="service-card editable-card">
+                        <h4>Garden & Property Care</h4>
+                        <ul>
+                            <li>Lawn Care</li>
+                            <li>Gardening</li>
+                            <li>Landscaping Maintenance</li>
+                            <li>Lawn Landscaping</li>
+                        </ul>
+                        <a href="#quote" class="text-link">PROPERTY CARE &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carpet Centerpiece / Before & After -->
+        <section class="carpet-centerpiece py-100">
+            <div class="container text-center reveal-up">
+                <h2>Bring Your Carpets Back to Life</h2>
+                <p class="subtitle max-800 mx-auto">Professional carpet cleaning for homes and properties that need a deeper refresh.</p>
+                
+                <div class="before-after-container mt-50">
+                    <div class="ba-slider">
+                        <!-- Before Image -->
+                        <div class="img-wrapper before-img" style="background-image: url('https://images.unsplash.com/photo-1563298723-dcfebaa392e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                            <span class="ba-label">BEFORE</span>
+                        </div>
+                        <!-- After Image -->
+                        <div class="img-wrapper after-img" style="background-image: url('https://images.unsplash.com/photo-1527515862127-a4fc05baf7a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                            <span class="ba-label">AFTER</span>
+                        </div>
+                        <!-- Slider Handle -->
+                        <div class="slider-handle">
+                            <div class="handle-line"></div>
+                            <div class="handle-circle">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-40">
+                    <a href="#quote" class="btn btn-primary btn-large">BOOK CARPET CLEANING</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- End of Tenancy -->
+        <section class="end-tenancy py-100 bg-navy text-white text-center">
+            <div class="container reveal-up">
+                <h2>Moving Out? Leave It Fresh.</h2>
+                <p class="subtitle max-800 mx-auto text-light-grey">Professional end-of-tenancy and move-out cleaning services for properties that need a thorough clean before the next stage of occupancy.</p>
+                <div class="pill-list mt-30">
+                    <span class="pill">End of Tenancy Cleaning</span>
+                    <span class="pill">Move Out Cleaning</span>
+                    <span class="pill">Deep Cleaning</span>
+                    <span class="pill">Kitchen & Bathroom Cleaning</span>
+                    <span class="pill">Oven Cleaning</span>
+                </div>
+                <div class="mt-40">
+                    <a href="#quote" class="btn btn-secondary btn-large">BOOK A MOVE-OUT CLEAN</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Work / Masonry Gallery -->
+        <section id="work" class="gallery-section py-100">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <h2>The Difference Is in the Details</h2>
+                    <p class="subtitle">See our recent professional cleaning and property care projects.</p>
+                    
+                    <div class="gallery-filters mt-30">
+                        <button class="filter-btn active" data-filter="all">ALL</button>
+                        <button class="filter-btn" data-filter="carpet">CARPET</button>
+                        <button class="filter-btn" data-filter="home">HOME</button>
+                        <button class="filter-btn" data-filter="commercial">COMMERCIAL</button>
+                        <button class="filter-btn" data-filter="exterior">EXTERIOR</button>
+                    </div>
+                </div>
+                
+                <div class="masonry-grid mt-40 reveal-up">
+                    <!-- Gallery Items -->
+                    <div class="gallery-item carpet">
+                        <img src="https://images.unsplash.com/photo-1527515862127-a4fc05baf7a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Carpet Clean">
+                        <div class="gallery-overlay"><span>Carpet Cleaning</span></div>
+                    </div>
+                    <div class="gallery-item home">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Home Clean">
+                        <div class="gallery-overlay"><span>Deep House Clean</span></div>
+                    </div>
+                    <div class="gallery-item commercial">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Office Clean">
+                        <div class="gallery-overlay"><span>Office Cleaning</span></div>
+                    </div>
+                    <div class="gallery-item exterior">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Exterior Clean">
+                        <div class="gallery-overlay"><span>Pressure Washing</span></div>
+                    </div>
+                    <div class="gallery-item carpet">
+                        <img src="https://images.unsplash.com/photo-1558904541-efa843a96f09?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Upholstery Clean">
+                        <div class="gallery-overlay"><span>Upholstery Cleaning</span></div>
+                    </div>
+                    <div class="gallery-item home">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Kitchen Clean">
+                        <div class="gallery-overlay"><span>Kitchen Cleaning</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="why-choose bg-light py-100">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <h2>Why Choose All Star?</h2>
+                </div>
+                <div class="trust-cards-grid reveal-up mt-40">
+                    <div class="trust-card-premium">
+                        <div class="icon">✓</div>
+                        <h4>Comprehensive Services</h4>
+                        <p>Cleaning and property-care services for a wide range of needs.</p>
+                    </div>
+                    <div class="trust-card-premium">
+                        <div class="icon">★</div>
+                        <h4>5.0 Star Rating</h4>
+                        <p>Highly rated by customers on Google.</p>
+                    </div>
+                    <div class="trust-card-premium">
+                        <div class="icon">💬</div>
+                        <h4>131 Reviews</h4>
+                        <p>Strong customer feedback and local social proof.</p>
+                    </div>
+                    <div class="trust-card-premium">
+                        <div class="icon">🏢</div>
+                        <h4>Residential & Commercial</h4>
+                        <p>Services for homes, workplaces and commercial properties.</p>
+                    </div>
+                    <div class="trust-card-premium">
+                        <div class="icon">📍</div>
+                        <h4>Local Timaru Service</h4>
+                        <p>Serving Timaru and nearby areas.</p>
+                    </div>
+                    <div class="trust-card-premium">
+                        <div class="icon">🕒</div>
+                        <h4>24-Hour Availability</h4>
+                        <p>Business listing currently shows open 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Timeline -->
+        <section class="process-section py-100">
+            <div class="container reveal-up text-center">
+                <h2>Our Simple Process</h2>
+                <div class="timeline mt-50">
+                    <div class="timeline-step">
+                        <div class="step-num">01</div>
+                        <h4>Tell Us What You Need</h4>
+                    </div>
+                    <div class="timeline-line"></div>
+                    <div class="timeline-step">
+                        <div class="step-num">02</div>
+                        <h4>Discuss Your Property</h4>
+                    </div>
+                    <div class="timeline-line"></div>
+                    <div class="timeline-step">
+                        <div class="step-num">03</div>
+                        <h4>Choose Your Service</h4>
+                    </div>
+                    <div class="timeline-line"></div>
+                    <div class="timeline-step">
+                        <div class="step-num">04</div>
+                        <h4>Schedule the Work</h4>
+                    </div>
+                    <div class="timeline-line"></div>
+                    <div class="timeline-step">
+                        <div class="step-num">05</div>
+                        <h4>Enjoy a Fresher Space</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Carousel -->
+        <section id="reviews" class="reviews-section py-100 bg-navy text-white text-center">
+            <div class="container reveal-up">
+                <h2>5.0★ Rated by Customers</h2>
+                <p class="subtitle text-light-grey">5.0 / 5 &bull; 131 Google Reviews</p>
+                
+                <div class="review-carousel mt-50">
+                    <!-- Placeholder Review Card -->
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Add verified customer review here."</p>
+                        <div class="review-author">
+                            <div class="author-img"></div>
+                            <div class="author-info">
+                                <strong>Customer Name</strong>
+                                <span>Carpet Cleaning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-40">
+                    <a href="https://www.allstarcarpetandcleaningservicestimaru.co.nz/" target="_blank" class="btn btn-secondary">VIEW ALL REVIEWS</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lead Generation / Quote Form Section -->
+        <section id="quote" class="quote-section py-100">
+            <div class="container">
+                <div class="split-layout">
+                    <div class="quote-content reveal-left">
+                        <h2>Ready for a Cleaner Space?</h2>
+                        <p>Tell us what you need and we'll help you find the right cleaning service for your property.</p>
+                        <div class="contact-methods mt-40">
+                            <div class="cm-item">
+                                <strong>Phone</strong>
+                                <a href="tel:+64276904340">+64 27 690 4340</a>
+                            </div>
+                            <div class="cm-item">
+                                <strong>Availability</strong>
+                                <span>Open 24 Hours</span>
+                            </div>
+                            <div class="cm-item">
+                                <strong>Service Area</strong>
+                                <span>Timaru & Nearby Areas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quote-form-wrapper reveal-right">
+                        <form class="premium-form" onsubmit="event.preventDefault(); alert('Thank you. Your enquiry has been received.');">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" id="phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Required</label>
+                                <select id="service" required>
+                                    <option value="">Select a service...</option>
+                                    <option value="Carpet Cleaning">Carpet Cleaning</option>
+                                    <option value="House Cleaning">House Cleaning</option>
+                                    <option value="Deep Cleaning">Deep Cleaning</option>
+                                    <option value="Window Cleaning">Window Cleaning</option>
+                                    <option value="Commercial Cleaning">Commercial Cleaning</option>
+                                    <option value="End of Tenancy">End of Tenancy</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message / Cleaning Requirements</label>
+                                <textarea id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">REQUEST MY FREE QUOTE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="faq-section py-100 bg-light">
+            <div class="container reveal-up">
+                <div class="section-header text-center">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                <div class="faq-accordion mt-40 max-800 mx-auto">
+                    <div class="faq-item">
+                        <button class="faq-question">What cleaning services do you provide? <span class="icon">+</span></button>
+                        <div class="faq-answer"><p>All Star Carpet and Cleaning Services Timaru provides a wide range of residential, commercial, carpet, upholstery, window, property and outdoor cleaning services.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Do you offer carpet cleaning? <span class="icon">+</span></button>
+                        <div class="faq-answer"><p>Yes. Services include carpet steam cleaning, general carpet cleaning, deep carpet cleaning, area rug cleaning and pet stain and odour removal.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Do you clean commercial properties? <span class="icon">+</span></button>
+                        <div class="faq-answer"><p>Yes. Commercial and workplace cleaning services are available.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Do you offer end-of-tenancy cleaning? <span class="icon">+</span></button>
+                        <div class="faq-answer"><p>Yes. End-of-tenancy and move-out cleaning are among the listed services.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What areas do you service? <span class="icon">+</span></button>
+                        <div class="faq-answer"><p>The business serves Timaru and nearby areas. Contact the team to confirm availability for your property.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Cinematic -->
+        <section class="final-cta text-center">
+            <div class="final-cta-bg"></div>
+            <div class="container reveal-up relative z-10">
+                <h2>Your Property Deserves the All Star Treatment.</h2>
+                <p class="subtitle max-800 mx-auto text-light-grey">Professional cleaning and property-care services for homes, businesses and properties across Timaru and nearby areas.</p>
+                <div class="hero-buttons mt-40">
                     <a href="#quote" class="btn btn-primary btn-large">GET A FREE QUOTE</a>
                     <a href="tel:+64276904340" class="btn btn-secondary btn-large">CALL +64 27 690 4340</a>
                 </div>
             </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo footer-logo">
+                        ALL STAR<br><span>CARPET & CLEANING</span>
+                    </a>
+                    <p class="mt-20 text-light-grey">Professional cleaning and property-care services in Timaru and nearby areas.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Our Work</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Carpet Cleaning</a></li>
+                        <li><a href="#">House Cleaning</a></li>
+                        <li><a href="#">Commercial Cleaning</a></li>
+                        <li><a href="#">Window Cleaning</a></li>
+                        <li><a href="#">End of Tenancy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>+64 27 690 4340</p>
+                    <p>Timaru & Nearby Areas</p>
+                    <p>Open 24 Hours</p>
+                    <div class="mt-20">
+                        <span class="stars" style="color: #64FFDA;">★★★★★</span> 5.0<br>131 Google Reviews
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2024 All Star Carpet and Cleaning Services Timaru. All Rights Reserved.</p>
+            </div>
         </div>
-    </section>
+    </footer>
 
-    <!-- Detailed implementation per plan -->
-    <!-- ... skipped for brevity, user can complete later ... -->
+    <!-- Mobile Fixed Bottom CTA -->
+    <div class="mobile-bottom-cta">
+        <a href="tel:+64276904340" class="btn btn-primary">CALL NOW</a>
+        <a href="#quote" class="btn btn-secondary bg-navy text-white border-none">GET A QUOTE</a>
+    </div>
 
+    <!-- Scripts -->
     <script src="js/script.js"></script>
 </body>
 </html>
